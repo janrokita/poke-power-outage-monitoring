@@ -49,10 +49,12 @@ curl http://localhost:8080/health
 
 ## Connecting to Poke
 
-1. Copy your MCP server URL from Railway (under the MCP service's public domain) and add `/mcp` to the end:
+1. Get your API key from [Settings → Advanced](https://poke.com/settings/advanced) and add it as `POKE_API_KEY` in your Railway cron service.
+
+2. Copy your MCP server URL from Railway (under the MCP service's public domain) and add `/mcp` to the end:
 
    <img src="images/railway-mcp.png" alt="Get MCP URL from Railway" width="50%">
 
-2. Add it as an integration in Poke at [Settings → Connections → Integrations](https://poke.com/settings/connections/integrations/new):
+3. Add it as an integration in Poke at [Settings → Connections → Integrations](https://poke.com/settings/connections/integrations/new):
 
    <img src="images/poke-mcp.png" alt="Add MCP to Poke" width="50%">
