@@ -1,8 +1,6 @@
 # Poke PGE Power Monitoring
 
-<!-- Deploy button goes here -->
-
-[![Deploy on Railway](https://railway.com/button.svg)](YOUR_TEMPLATE_URL_HERE)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/z1OZTu?referralCode=6bP-D_&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 Power outage monitoring for [PGE (Polska Grupa Energetyczna)](https://www.gkpge.pl/). Uses the public API at `power-outage.gkpge.pl` to check for scheduled outages in your area.
 
@@ -48,3 +46,13 @@ curl http://localhost:8080/health
    - **MCP**: root directory `mcp/`
 3. Set shared variables: `REDIS_URL=${{Redis.REDIS_URL}}`, `POWER_OUTAGE_LOCATION`
 4. Enable public networking on MCP service
+
+## Connecting to Poke
+
+1. Copy your MCP server URL from Railway (under the MCP service's public domain) and add `/mcp` to the end:
+
+   ![Get MCP URL from Railway](images/railway-mcp.png)
+
+2. Add it as an integration in Poke at [Settings → Connections → Integrations](https://poke.com/settings/connections/integrations/new):
+
+   ![Add MCP to Poke](images/poke-mcp.png)
