@@ -51,8 +51,8 @@ curl http://localhost:8080/health
 
 1. Copy your MCP server URL from Railway (under the MCP service's public domain) and add `/mcp` to the end:
 
-   ![Get MCP URL from Railway](images/railway-mcp.png)
+   <img src="images/railway-mcp.png" alt="Get MCP URL from Railway" width="50%">
 
 2. Add it as an integration in Poke at [Settings → Connections → Integrations](https://poke.com/settings/connections/integrations/new):
 
-   ![Add MCP to Poke](images/poke-mcp.png)
+   <img src="images/poke-mcp.png" alt="Add MCP to Poke" width="50%">
